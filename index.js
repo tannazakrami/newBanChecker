@@ -169,7 +169,7 @@ const updateBanCheckerBans = (array) => {
     updateBanChecker.updateDataInBanChecker(array)
 }
 
-cron.schedule('0 59 13 * * *', () => {
+cron.schedule('0 20 15 * * *', () => {
     console.log('Jopa')
     console.log('Jopa')
     console.log('Jopa')
