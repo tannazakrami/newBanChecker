@@ -1,4 +1,5 @@
-const data = require("./getData");
+const cron = require('node-cron')
+const data = require("./getData")
 const update = require("./updateData")
 const puppeteer = require('puppeteer')
 const dataBanCkecker = require('./getDataFromBanChecker')
@@ -168,6 +169,8 @@ const updateBanCheckerBans = (array) => {
     updateBanChecker.updateDataInBanChecker(array)
 }
 
-console.log('Jopa')
-console.log('Jopa')
-console.log('Jopa')
+cron.schedule('0 25 1 * * *', () => {
+    console.log('Jopa')
+    console.log('Jopa')
+    console.log('Jopa')
+})
