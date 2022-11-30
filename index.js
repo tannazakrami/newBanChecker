@@ -158,7 +158,7 @@ const checkBans = async () => {
     updateBanCheckerBans(arrayUrl)
 }
 
-checkBans();
+//checkBans();
 
 const updateGoogleSheets = (array) => {
     update.updateData(array);
@@ -167,3 +167,7 @@ const updateGoogleSheets = (array) => {
 const updateBanCheckerBans = (array) => {
     updateBanChecker.updateDataInBanChecker(array)
 }
+
+console.log('Jopa')
+console.log('Jopa')
+console.log('Jopa')
